@@ -10,10 +10,18 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
 	"beautifulsoup4>=4.12",
+	"dash>=4.4.1",
+	"dash-core-components>=2.0.0",
+	"dash-html-components>=2.0.0",
 	"ipykernel>=7.0",
+	"matplotlib>=3.11.1",
 	"numpy>=2.0",
 	"pandas>=2.2",
+	"pathlib>=1.0.1",
 	"requests>=2.31",
+	"scikit-learn>=1.9.0",
+	"seaborn>=0.13.2",
+	"wget>=3.2",
 ]
 
 [project.scripts]

@@ -16,6 +16,38 @@ uv run pytest
 uv run coursera-ds-capstone
 ```
 
+## Git workflow
+
+### Create a new feature branch locally and push it to remote
+
+```bash
+git status
+git checkout main
+git pull origin main
+git checkout -b feature/<your-branch-name>
+
+# make your changes, then:
+git status
+git add .
+git commit -m "Add my new feature"
+git push -u origin feature/<your-branch-name>
+```
+
+### Start from the latest remote code, create a new branch, and modify files
+
+```bash
+git fetch origin
+git checkout main
+git pull origin main
+git checkout -b feature/my-next-change
+
+# edit files, then:
+git status
+git add .
+git commit -m "Update project files"
+git push -u origin feature/my-next-change
+```
+
 ## Notebooks
 
 This workspace includes lab notebooks in `notebooks/`.
